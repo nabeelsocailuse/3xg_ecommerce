@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-27 09:09:19.370348",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "url",
+  "alt",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL"
+  },
+  {
+   "fieldname": "alt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ALT"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-27 09:13:59.773861",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Order Return Request Media",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

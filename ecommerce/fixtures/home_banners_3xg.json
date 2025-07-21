@@ -1,0 +1,105 @@
+[
+ {
+  "banner_type": "",
+  "docstatus": 0,
+  "doctype": "Home Banners 3XG",
+  "home_row1_column3_bottom": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner2-252_135_jscqcj.jpg",
+  "home_row1_column3_bottom_url": null,
+  "home_row1_column3_top": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner1-252_135_q07nel.jpg",
+  "home_row1_column3_top_url": null,
+  "home_row1_sliders": [
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner1-716_279_dx4r45.jpg",
+    "banner_name": "Feel the beat with zealot",
+    "parent": "Banner-0024",
+    "parentfield": "home_row1_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner2-716_279_eeysdv.jpg",
+    "banner_name": "Feel the beat with zealot",
+    "parent": "Banner-0024",
+    "parentfield": "home_row1_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner3-716_279_a8zvqa.jpg",
+    "banner_name": "Capture Brilliance with Camon 40",
+    "parent": "Banner-0024",
+    "parentfield": "home_row1_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner4-716_279_b9ws7m.jpg",
+    "banner_name": "Fast Delivery",
+    "parent": "Banner-0024",
+    "parentfield": "home_row1_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner5-716_279_mv570a.jpg",
+    "banner_name": "See the future unfold",
+    "parent": "Banner-0024",
+    "parentfield": "home_row1_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner6-716_279_ttqdfe.jpg",
+    "banner_name": "See the future unfold",
+    "parent": "Banner-0024",
+    "parentfield": "home_row1_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   }
+  ],
+  "home_row2_column1_left": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner2-584_274_u78sj0.jpg",
+  "home_row2_column1_left_url": null,
+  "home_row2_column1_right": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/banner1-584_274_k7blgw.jpg",
+  "home_row2_column1_right_url": null,
+  "home_row3_sliders": [
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/Brand_Banners_ablzm7.jpg",
+    "banner_name": "Note 50 Pro",
+    "parent": "Banner-0024",
+    "parentfield": "home_row3_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/Brand_Banners_retwnv.jpg",
+    "banner_name": "Big Inner",
+    "parent": "Banner-0024",
+    "parentfield": "home_row3_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/Brand_Banners_zr7qyy.jpg",
+    "banner_name": "itel New Storage",
+    "parent": "Banner-0024",
+    "parentfield": "home_row3_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   },
+   {
+    "banner_image": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/Brand_Banners_n6jmep.jpg",
+    "banner_name": "itel New Storage",
+    "parent": "Banner-0024",
+    "parentfield": "home_row3_sliders",
+    "parenttype": "Home Banners 3XG",
+    "url": null
+   }
+  ],
+  "home_row4": "https://res.cloudinary.com/dvpfu4h1q/image/upload/v1745852959/C-Banners_tiolp5.jpg",
+  "home_row4_url": null,
+  "modified": "2025-06-11 12:45:40.075731",
+  "name": "Banner-0024",
+  "platform": "Web",
+  "status": "Activated"
+ }
+]

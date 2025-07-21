@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-08 09:31:47.380446",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "payout_id",
+  "merchant_id",
+  "business_name",
+  "is_registered",
+  "column_break_rkjjh",
+  "status",
+  "amount",
+  "merchant_email",
+  "merchant_fullname"
+ ],
+ "fields": [
+  {
+   "fieldname": "merchant_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Merchant Id",
+   "options": "Merchants"
+  },
+  {
+   "fetch_from": "merchant_id.business_name",
+   "fieldname": "business_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Business Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rkjjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Review",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "In Review\nApproved\nRejected"
+  },
+  {
+   "default": "0",
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "payout_id",
+   "fieldtype": "Data",
+   "label": "Payout Id",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "merchant_id.email",
+   "fetch_if_empty": 1,
+   "fieldname": "merchant_email",
+   "fieldtype": "Data",
+   "label": "Merchant Email"
+  },
+  {
+   "fetch_from": "merchant_id.full_name",
+   "fieldname": "merchant_fullname",
+   "fieldtype": "Data",
+   "label": "Merchant Fullname"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_registered",
+   "fieldtype": "Check",
+   "label": "Is Registered?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-30 16:48:02.820222",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Payout Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "business_name"
+}

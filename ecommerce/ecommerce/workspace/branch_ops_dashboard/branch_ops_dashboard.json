@@ -1,0 +1,40 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"3auP4lS8Wl\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 28px;\\\">Branch Ops</span>\"}]",
+ "creation": "2025-06-05 19:44:20.218938",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dialpad",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Branch Ops Dashboard",
+ "links": [],
+ "modified": "2025-06-13 10:31:01.301573",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Branch Ops Dashboard",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Product Manager"
+  }
+ ],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Branch Ops Dashboard",
+   "link_to": "branch-ops",
+   "type": "Page"
+  }
+ ],
+ "title": "Shop Dashboard"
+}

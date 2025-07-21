@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-16 22:08:23.491347",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "detail_section",
+  "imei",
+  "phone",
+  "column_break_bl1qt",
+  "status",
+  "is_claimed",
+  "claimed_by",
+  "complain_info_section",
+  "complain",
+  "complain_date",
+  "column_break_mzsg4",
+  "complain_by",
+  "section_break_1uwgx",
+  "warranty_expiry_date",
+  "warranty_status",
+  "column_break_yotj7",
+  "model_brand",
+  "is_active",
+  "user_id",
+  "address_info_section",
+  "address",
+  "area",
+  "pickup_info_column",
+  "pickup_date",
+  "pickup_time",
+  "order_item_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "imei",
+   "fieldtype": "Data",
+   "label": "IMEI"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_claimed",
+   "fieldtype": "Check",
+   "label": "Is Claimed"
+  },
+  {
+   "fieldname": "claimed_by",
+   "fieldtype": "Data",
+   "label": "Claimed By"
+  },
+  {
+   "fieldname": "complain_date",
+   "fieldtype": "Date",
+   "label": "Complain Date"
+  },
+  {
+   "fieldname": "warranty_expiry_date",
+   "fieldtype": "Date",
+   "label": "Warranty Expiry Date"
+  },
+  {
+   "fieldname": "complain",
+   "fieldtype": "Data",
+   "label": "Complain"
+  },
+  {
+   "fieldname": "warranty_status",
+   "fieldtype": "Select",
+   "label": "Warranty Status",
+   "options": "\nActive\nExpired"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "complain_by",
+   "fieldtype": "Data",
+   "label": "Complain By"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "model_brand",
+   "fieldtype": "Data",
+   "label": "Model Brand"
+  },
+  {
+   "fieldname": "pickup_date",
+   "fieldtype": "Date",
+   "label": "Pickup Date"
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Time",
+   "label": "Pickup Time"
+  },
+  {
+   "fieldname": "detail_section",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "column_break_bl1qt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "complain_info_section",
+   "fieldtype": "Section Break",
+   "label": "Complain Info"
+  },
+  {
+   "fieldname": "column_break_mzsg4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1uwgx",
+   "fieldtype": "Section Break",
+   "label": "Warranty Info"
+  },
+  {
+   "fieldname": "column_break_yotj7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_info_section",
+   "fieldtype": "Section Break",
+   "label": "Address Info"
+  },
+  {
+   "bold": 1,
+   "fieldname": "pickup_info_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved By General Administrator\nRejected By General Administrator\nApproved By Executive Administrator\nRejected By Executive Administrator\nApproved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_item_id",
+   "fieldtype": "Data",
+   "label": "Order ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-30 10:34:59.385016",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Warranty",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

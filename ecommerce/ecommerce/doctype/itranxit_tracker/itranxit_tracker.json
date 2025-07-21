@@ -1,0 +1,706 @@
+{
+ "actions": [],
+ "autoname": "field:orderid",
+ "creation": "2025-01-27 07:20:29.730050",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "orderid",
+  "ordercode",
+  "column_break_tlidh",
+  "bulk_order_id",
+  "tracking_code",
+  "column_break_cvpoa",
+  "status",
+  "is_bulk",
+  "section_break_mnkfm",
+  "created_at",
+  "column_break_vnrid",
+  "accepted_at",
+  "column_break_kuaig",
+  "rejected_at",
+  "column_break_4wgee",
+  "cancelled_at",
+  "column_break_qylsv",
+  "cancelled_by",
+  "section_break_dvjm0",
+  "schedule_for",
+  "column_break_h2jfo",
+  "schedule_date_time",
+  "column_break_fsp5u",
+  "country",
+  "column_break_21i8q",
+  "state",
+  "receiver_info_tab",
+  "receiver_name",
+  "receiver_phone",
+  "column_break_cfjoj",
+  "receiver_address",
+  "customer_info_section",
+  "id",
+  "f_name",
+  "l_name",
+  "image",
+  "column_break_tgqov",
+  "phone",
+  "email",
+  "address",
+  "column_break_pkhu6",
+  "role",
+  "ref_code",
+  "email_verified_at",
+  "customer_status",
+  "datecreated",
+  "profile_section",
+  "customerid",
+  "userid",
+  "profiledatecreated",
+  "column_break_hglrz",
+  "type",
+  "business_name",
+  "business_address",
+  "industry",
+  "column_break_n3jno",
+  "position",
+  "daily_average_orders",
+  "order_slots_left",
+  "is_subscribed",
+  "plan_id",
+  "apikey",
+  "wallet_section",
+  "wallet_id",
+  "wallet_user_id",
+  "column_break_bdked",
+  "escrow_amount",
+  "withdrawable_amount",
+  "referral_balance",
+  "bank_info_section",
+  "bank_db_id",
+  "bank_user_id",
+  "bank_id",
+  "bank_name",
+  "column_break_0no92",
+  "account_name",
+  "account_number",
+  "receipient_code",
+  "bank_type",
+  "parcel_info_tab",
+  "parcel_name",
+  "category",
+  "column_break_0pwas",
+  "description",
+  "pickup_info_tab",
+  "pickup_code",
+  "pickup_phone",
+  "pickup_address",
+  "column_break_nr0eb",
+  "pickup_at",
+  "pickup_coordinate",
+  "column_break_tekju",
+  "dropped_off_at",
+  "dropoff_coordinate",
+  "delivery_info_tab",
+  "driver",
+  "driver_selected_at",
+  "distance_to_destination",
+  "column_break_to2ny",
+  "vehicle_type",
+  "delivery_note",
+  "payment_info_tab",
+  "payment_method",
+  "amount",
+  "original_amount",
+  "column_break_1zpik",
+  "is_paid",
+  "amount_paid",
+  "order_doctype_info_tab",
+  "order"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Order Details"
+  },
+  {
+   "fieldname": "orderid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "OrderID",
+   "unique": 1
+  },
+  {
+   "fieldname": "ordercode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "OrderCode"
+  },
+  {
+   "fieldname": "bulk_order_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bulk Order Id"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_bulk",
+   "fieldtype": "Check",
+   "label": "Is Bulk"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "original_amount",
+   "fieldtype": "Currency",
+   "label": "Original Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_paid",
+   "fieldtype": "Check",
+   "label": "Is Paid"
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "parcel_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Parcel Info"
+  },
+  {
+   "fieldname": "parcel_name",
+   "fieldtype": "Data",
+   "label": "Parcel Name"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Data",
+   "label": "Vehicle Type"
+  },
+  {
+   "fieldname": "delivery_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Delivery Info"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Data",
+   "label": "Driver"
+  },
+  {
+   "fieldname": "driver_selected_at",
+   "fieldtype": "Data",
+   "label": "Driver Selected At"
+  },
+  {
+   "fieldname": "payment_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Payment Info"
+  },
+  {
+   "fieldname": "column_break_1zpik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0pwas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_to2ny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tlidh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pickup_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Pickup Info"
+  },
+  {
+   "fieldname": "pickup_address",
+   "fieldtype": "Small Text",
+   "label": "Pickup Address"
+  },
+  {
+   "fieldname": "pickup_phone",
+   "fieldtype": "Data",
+   "label": "Pickup Phone"
+  },
+  {
+   "fieldname": "pickup_at",
+   "fieldtype": "Data",
+   "label": "Pickup At"
+  },
+  {
+   "fieldname": "pickup_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Pickup Code"
+  },
+  {
+   "fieldname": "column_break_nr0eb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pickup_coordinate",
+   "fieldtype": "Data",
+   "label": "Pickup Coordinate"
+  },
+  {
+   "fieldname": "dropoff_coordinate",
+   "fieldtype": "Data",
+   "label": "Dropoff Coordinate"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Data",
+   "label": "Payment Method"
+  },
+  {
+   "fieldname": "delivery_note",
+   "fieldtype": "Small Text",
+   "label": "Delivery Note"
+  },
+  {
+   "fieldname": "distance_to_destination",
+   "fieldtype": "Data",
+   "label": "Distance To Destination"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Data",
+   "label": "Created At"
+  },
+  {
+   "bold": 1,
+   "fieldname": "tracking_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tracking Code"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "dropped_off_at",
+   "fieldtype": "Data",
+   "label": "Dropped Off At"
+  },
+  {
+   "fieldname": "column_break_tekju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mnkfm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "accepted_at",
+   "fieldtype": "Data",
+   "label": "Accepted At"
+  },
+  {
+   "fieldname": "column_break_kuaig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rejected_at",
+   "fieldtype": "Data",
+   "label": "Rejected At"
+  },
+  {
+   "fieldname": "column_break_4wgee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cancelled_at",
+   "fieldtype": "Data",
+   "label": "Cancelled At"
+  },
+  {
+   "fieldname": "cancelled_by",
+   "fieldtype": "Data",
+   "label": "Cancelled By"
+  },
+  {
+   "fieldname": "column_break_qylsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cvpoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vnrid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dvjm0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "schedule_for",
+   "fieldtype": "Data",
+   "label": "Schedule For"
+  },
+  {
+   "fieldname": "column_break_h2jfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "schedule_date_time",
+   "fieldtype": "Data",
+   "label": "Schedule Date Time"
+  },
+  {
+   "fieldname": "column_break_fsp5u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "column_break_21i8q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "receiver_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Receiver Info"
+  },
+  {
+   "fieldname": "receiver_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Receiver Name"
+  },
+  {
+   "fieldname": "receiver_phone",
+   "fieldtype": "Data",
+   "label": "Receiver Phone"
+  },
+  {
+   "fieldname": "column_break_cfjoj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receiver_address",
+   "fieldtype": "Small Text",
+   "label": "Receiver Address"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "customer_info_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Info"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "ID"
+  },
+  {
+   "fieldname": "f_name",
+   "fieldtype": "Data",
+   "label": "fisrt Name"
+  },
+  {
+   "fieldname": "l_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Data",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_tgqov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_pkhu6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "label": "Role"
+  },
+  {
+   "fieldname": "ref_code",
+   "fieldtype": "Data",
+   "label": "Ref Code"
+  },
+  {
+   "fieldname": "email_verified_at",
+   "fieldtype": "Data",
+   "label": "Email Verified At"
+  },
+  {
+   "fieldname": "customer_status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "datecreated",
+   "fieldtype": "Data",
+   "label": "Date Created"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "profile_section",
+   "fieldtype": "Section Break",
+   "label": "Profile Info"
+  },
+  {
+   "fieldname": "customerid",
+   "fieldtype": "Data",
+   "label": "customerID"
+  },
+  {
+   "fieldname": "userid",
+   "fieldtype": "Data",
+   "label": "userID"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "profiledatecreated",
+   "fieldtype": "Data",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "business_name",
+   "fieldtype": "Data",
+   "label": "Business Name"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "business_address",
+   "fieldtype": "Small Text",
+   "label": "Business Address"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Data",
+   "label": "Industry"
+  },
+  {
+   "fieldname": "apikey",
+   "fieldtype": "Data",
+   "label": "Api key"
+  },
+  {
+   "fieldname": "daily_average_orders",
+   "fieldtype": "Data",
+   "label": "Daily Average Orders"
+  },
+  {
+   "fieldname": "order_slots_left",
+   "fieldtype": "Data",
+   "label": "Order Slots Left"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_subscribed",
+   "fieldtype": "Check",
+   "label": "Is Subscribed"
+  },
+  {
+   "fieldname": "plan_id",
+   "fieldtype": "Data",
+   "label": "Plan Id"
+  },
+  {
+   "fieldname": "column_break_hglrz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_n3jno",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "wallet_section",
+   "fieldtype": "Section Break",
+   "label": "Wallet Info"
+  },
+  {
+   "fieldname": "wallet_id",
+   "fieldtype": "Data",
+   "label": "Walle ID"
+  },
+  {
+   "fieldname": "wallet_user_id",
+   "fieldtype": "Data",
+   "label": "Wallet User ID"
+  },
+  {
+   "fieldname": "column_break_bdked",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "escrow_amount",
+   "fieldtype": "Data",
+   "label": "Escrow Amount"
+  },
+  {
+   "fieldname": "withdrawable_amount",
+   "fieldtype": "Data",
+   "label": "Withdrawable Amount"
+  },
+  {
+   "fieldname": "referral_balance",
+   "fieldtype": "Data",
+   "label": "Referral Balance"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "bank_info_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Info"
+  },
+  {
+   "fieldname": "bank_db_id",
+   "fieldtype": "Data",
+   "label": "Bank DB ID"
+  },
+  {
+   "fieldname": "bank_user_id",
+   "fieldtype": "Data",
+   "label": "Bank User ID"
+  },
+  {
+   "fieldname": "bank_id",
+   "fieldtype": "Data",
+   "label": "Bank ID"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "column_break_0no92",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "Account Name"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "receipient_code",
+   "fieldtype": "Data",
+   "label": "Receipient Code"
+  },
+  {
+   "fieldname": "bank_type",
+   "fieldtype": "Data",
+   "label": "Bank type"
+  },
+  {
+   "fieldname": "order_doctype_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Order Doctype Info"
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Link",
+   "label": "Order",
+   "options": "Order"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-14 16:15:07.911346",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "iTranxit Tracker",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "orderid"
+}

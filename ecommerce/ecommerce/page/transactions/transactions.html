@@ -1,0 +1,66 @@
+
+<div class="dashboard-cards">
+     
+    <div class="dashboard-card">
+        <a href="/app/transaction" style="text-decoration: none;">
+            <h3>Total</h3>
+            <p>{{ total_amount }}</p>
+        </a>
+    </div>
+
+    <div class="dashboard-card">
+        <a href="/app/transaction?status=completed" style="text-decoration: none;">
+            <h3>Completed</h3>
+            <p>{{ completed }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/transaction?status=pending" style="text-decoration: none;">
+            <h3>Pending</h3>
+            <p>{{ pending }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/transaction?status=rejected" style="text-decoration: none;">
+            <h3>Rejected</h3>
+            <p>{{ rejected }}</p>
+        </a>
+    </div> 
+    
+</div>
+
+
+<div class="order-table-wrapper">
+    <h2>Transaction Information</h2>
+    <table class="order-table display" id="example" style="width:100%">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Transaction Name</th>
+                <th>Transaction Type</th>
+		<th>Amount</th>
+                <th>Fees</th>
+                <th>Status</th>
+		<th>Provider</th>
+                <th>Creation</th>
+                <th>Owner</th>
+             </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.user_id }}</td>
+                <td><a href="/app/products/{{product.name}}">{{ product.name }}</a></td>
+                <td>{{ product.transaction_type }}</td>
+		<td>{{ product.amount }}</td>
+		<td>{{ product.fees }}</td>
+                <td>{{ product.status }}</td>
+		<td>{{ product.payment_provider }}</td>
+                <td>{{ product.creation }}</td>
+                <td>{{ product.owner }}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

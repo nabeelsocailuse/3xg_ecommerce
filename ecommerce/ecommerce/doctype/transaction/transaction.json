@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-01 00:20:31.778162",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "transaction_reference",
+  "payment_provider",
+  "amount",
+  "transaction_type",
+  "status",
+  "description",
+  "column_break_vfbdp",
+  "created_at",
+  "release_date",
+  "fees",
+  "external_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID"
+  },
+  {
+   "fieldname": "transaction_reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "external_reference",
+   "fieldtype": "Data",
+   "label": "External Reference"
+  },
+  {
+   "fieldname": "payment_provider",
+   "fieldtype": "Data",
+   "label": "Payment Provider"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nCompleted\nRejected"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Data",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "release_date",
+   "fieldtype": "Data",
+   "label": "Release Date"
+  },
+  {
+   "fieldname": "fees",
+   "fieldtype": "Data",
+   "label": "Fees"
+  },
+  {
+   "fieldname": "column_break_vfbdp",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-01 00:25:39.112829",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

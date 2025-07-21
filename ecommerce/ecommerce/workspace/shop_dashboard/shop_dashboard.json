@@ -1,0 +1,278 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"AZRpvIxhJZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Dashboards\",\"col\":4}},{\"id\":\"fE5FGF7JcP\",\"type\":\"card\",\"data\":{\"card_name\":\"Merchant | Product | Customer\",\"col\":4}},{\"id\":\"ONhzZebpiV\",\"type\":\"card\",\"data\":{\"card_name\":\"Transaction Detail\",\"col\":4}},{\"id\":\"Btno082h6F\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"qqgpBc1ij3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"k1YEqyhF2b\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b><span class=\\\"h2\\\">Other</span> <span class=\\\"h2\\\">Info</span></b></span>\",\"col\":12}},{\"id\":\"9sz9cFuDPO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ProductWishlist\",\"col\":3}},{\"id\":\"RfuAeAkmnW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cart\",\"col\":3}},{\"id\":\"jR8vw9NQc5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Review\",\"col\":3}},{\"id\":\"-qKmUDNqtS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Warranty\",\"col\":3}},{\"id\":\"rD0xocxNCK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Escrow\",\"col\":3}},{\"id\":\"oCI2ISpwE5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transaction\",\"col\":3}}]",
+ "creation": "2025-02-07 17:00:24.029612",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "heart-active",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Shop Dashboard",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Merchant | Product | Customer",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Merchants",
+   "link_count": 0,
+   "link_to": "Merchants",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Products",
+   "link_count": 0,
+   "link_to": "Products",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Website User",
+   "link_count": 0,
+   "link_to": "Website User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transaction Detail",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Order",
+   "link_count": 0,
+   "link_to": "Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Order Return Request",
+   "link_count": 0,
+   "link_to": "Order Return Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Accounting Transactions",
+   "link_count": 0,
+   "link_to": "Accounting Transactions",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payout Request",
+   "link_count": 0,
+   "link_to": "Payout Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wallet Transaction",
+   "link_count": 0,
+   "link_to": "Wallet Transaction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Order Shipment",
+   "link_count": 0,
+   "link_to": "Order Shipment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Accounts Settings",
+   "link_count": 0,
+   "link_to": "XG Accounts Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dashboards",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Order Dashboard",
+   "link_count": 0,
+   "link_to": "order-management",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payout Dashboard",
+   "link_count": 0,
+   "link_to": "payout-dashboard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Product Management",
+   "link_count": 0,
+   "link_to": "product-management",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transaction Dashboard",
+   "link_count": 0,
+   "link_to": "transactions",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Merchant Dashboard",
+   "link_count": 0,
+   "link_to": "merchant-dashboard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Accounts Dashboard",
+   "link_count": 0,
+   "link_to": "accounts-dashboard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-07-18 14:50:16.016659",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Shop Dashboard",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Product Manager"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Transaction",
+   "link_to": "Transaction",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Escrow",
+   "link_to": "Escrow",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "ProductWishlist",
+   "link_to": "ProductWishlist",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Warranty",
+   "link_to": "Warranty",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cart",
+   "link_to": "Cart",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Product Review",
+   "link_to": "Product Review",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Shop Dashboard"
+}

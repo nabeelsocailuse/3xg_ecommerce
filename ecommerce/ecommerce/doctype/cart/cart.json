@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-31 18:14:33.292945",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "userid",
+  "email",
+  "column_break_udths",
+  "status",
+  "items_info_section",
+  "items",
+  "totals_section",
+  "itemsprice",
+  "shippingprice",
+  "totaldiscount",
+  "coupondiscount",
+  "totalprice",
+  "column_break_tgejn",
+  "couponapplied",
+  "couponcode"
+ ],
+ "fields": [
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Cart Item"
+  },
+  {
+   "fetch_from": "user_id.email",
+   "fetch_if_empty": 1,
+   "fieldname": "email",
+   "fieldtype": "Link",
+   "label": "Email",
+   "options": "Website User"
+  },
+  {
+   "fieldname": "column_break_udths",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "items_info_section",
+   "fieldtype": "Section Break",
+   "label": "Items Info"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nAbandon"
+  },
+  {
+   "fieldname": "totals_section",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "default": "0",
+   "fieldname": "itemsprice",
+   "fieldtype": "Currency",
+   "label": "ItemsPrice"
+  },
+  {
+   "default": "0",
+   "fieldname": "shippingprice",
+   "fieldtype": "Currency",
+   "label": "ShippingPrice"
+  },
+  {
+   "default": "0",
+   "fieldname": "totaldiscount",
+   "fieldtype": "Currency",
+   "label": "TotalDiscount"
+  },
+  {
+   "fieldname": "column_break_tgejn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "couponcode",
+   "fieldtype": "Data",
+   "label": "CouponCode"
+  },
+  {
+   "default": "0",
+   "fieldname": "coupondiscount",
+   "fieldtype": "Currency",
+   "label": "CouponDiscount"
+  },
+  {
+   "default": "0",
+   "fieldname": "couponapplied",
+   "fieldtype": "Check",
+   "label": "CouponApplied"
+  },
+  {
+   "fieldname": "userid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UserID"
+  },
+  {
+   "default": "0",
+   "fieldname": "totalprice",
+   "fieldtype": "Currency",
+   "label": "Total Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-09 10:54:19.746299",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Cart",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "email"
+}

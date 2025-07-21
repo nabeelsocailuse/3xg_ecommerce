@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-08 23:15:27.101818",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "product_name",
+  "actual_price",
+  "discounted_price",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "actual_price",
+   "fieldtype": "Currency",
+   "label": "Actual Price"
+  },
+  {
+   "fieldname": "discounted_price",
+   "fieldtype": "Currency",
+   "label": "Discounted Price"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Long Text",
+   "label": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-09 21:28:16.157807",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Wishlist Product",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

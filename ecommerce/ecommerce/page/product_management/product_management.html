@@ -1,0 +1,61 @@
+
+<div class="dashboard-cards">
+     
+    <div class="dashboard-card">
+        <a href="/app/products/view/list?is_disabled=0" style="text-decoration: none;">
+            <h3>Total</h3>
+            <p>{{ is_disabled }}</p>
+        </a>
+    </div>
+
+    <div class="dashboard-card">
+        <a href="/app/product?status=LIVE" style="text-decoration: none;">
+            <h3>Live</h3>
+            <p>{{ live }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/product?status=IN_REVIEW" style="text-decoration: none;">
+            <h3>In Review</h3>
+            <p>{{ in_review }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/product?status=DISABLED" style="text-decoration: none;">
+            <h3>Disabled</h3>
+            <p>{{ disabled }}</p>
+        </a>
+    </div> 
+    
+</div>
+<div class="order-table-wrapper">
+    <h2>Products Information</h2>
+    <table class="order-table display" id="example" style="width:100%">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+		<th>Discount</th>
+                <th>Status</th>
+                <th>Creation Date</th>
+                <th>Created By</th>
+                <th>Last Modified</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.merchant_email }}</td>
+                <td><a href="/app/products/{{product.name}}">{{ product.product_name }}</a></td>
+                <td>{{ product.actual_price }}</td>
+		<td>{{ product.discounted_price }}</td>
+                <td>{{ product.status }}</td>
+                <td>{{ product.creation }}</td>
+                <td>{{ product.owner }}</td>
+                <td>{{ product.modified }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

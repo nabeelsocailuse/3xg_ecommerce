@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2013-02-22 01:27:54",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "brand",
+  "image",
+  "description",
+  "category",
+  "defaults",
+  "brand_defaults"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand Name",
+   "oldfieldname": "brand",
+   "oldfieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "options": "image"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Text",
+   "width": "300px"
+  },
+  {
+   "fieldname": "defaults",
+   "fieldtype": "Section Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "brand_defaults",
+   "fieldtype": "Table",
+   "label": "Brand Defaults",
+   "options": "Item Default"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Item Group"
+  }
+ ],
+ "icon": "fa fa-certificate",
+ "idx": 1,
+ "image_field": "image",
+ "links": [],
+ "modified": "2025-03-24 12:20:19.317767",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Brand",
+ "naming_rule": "Random",
+ "nsm_parent_field": "parent_brand",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User"
+  }
+ ],
+ "search_fields": "brand",
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "brand"
+}

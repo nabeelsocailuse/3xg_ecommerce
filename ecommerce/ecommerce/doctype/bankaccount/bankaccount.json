@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-03 15:07:21.514017",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "accountname",
+  "accountnumber",
+  "bankcode",
+  "bankname",
+  "column_break_2ta0p",
+  "isdefault",
+  "merchantid",
+  "merchantname"
+ ],
+ "fields": [
+  {
+   "fieldname": "accountname",
+   "fieldtype": "Data",
+   "label": "AccountName"
+  },
+  {
+   "fieldname": "accountnumber",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "AccountNumber"
+  },
+  {
+   "fieldname": "bankcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "BankCode"
+  },
+  {
+   "fieldname": "bankname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "BankName"
+  },
+  {
+   "default": "0",
+   "fieldname": "isdefault",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "IsDefault"
+  },
+  {
+   "fieldname": "column_break_2ta0p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "merchantid",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "MerchantId",
+   "options": "Merchants"
+  },
+  {
+   "fetch_from": "merchantid.business_name",
+   "fetch_if_empty": 1,
+   "fieldname": "merchantname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "MerchantName",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-03 15:43:57.846465",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "BankAccount",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "accountname, accountnumber, bankcode, bankname, merchantname",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "accountname"
+}

@@ -1,0 +1,98 @@
+<!-- <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+</head> -->
+
+<style>
+    .xg_color{
+        color: #E7906B;
+    }
+    .text_bold{
+        font-weight: bold;
+    }
+    .text_center{
+        text-align: center;
+    }
+</style>
+
+<div class="dashboard-cards">
+    <div class="dashboard-card">
+        <a href="#" style="text-decoration: none;">
+            <h4 class="xg_color text_bold">Commission</h4>
+            <p>{{ commission_balance }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="#" style="text-decoration: none;">
+            <h4 class="xg_color text_bold">Merchant Balance</h4>
+            <p>{{ merchant_balance }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="#" style="text-decoration: none;">
+            <Delivery class="xg_color text_bold">Delivery Charges</h4>
+            <p>{{ delivery_charges }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="#" style="text-decoration: none;">
+            <h4 class="xg_color text_bold">Wallet Balance</h4>
+            <p>{{ wallet_balance }}</p>
+        </a>
+    </div>
+</div>
+<div class="order-table-wrapper">
+    <h3 class="text_center xg_color">Accounts Balance</h3>
+    <table class="order-table display" id="example" style="width:100%">
+        <thead>
+            <tr>
+                <!-- <th>Date</th> -->
+                <th>Account</th>
+                <!-- <th>Party Type</th> -->
+                <!-- <th>Party</th> -->
+                <!-- <th>Item Name</th> -->
+                
+                <th>Credit</th>
+                <th>Debit</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in transactions %}
+            <tr>
+                <!-- <td>{{ row.posting_date }}</td> -->
+                <!-- <td><a href="/app/order/{{order.name}}">{{ row.name }}</a></td> -->
+                <td>{{ row.account }}</td>
+                <!-- <td>{{ row.party_type }}</td> -->
+                <!-- <td>{{ row.party }}</td> -->
+                <!-- <td>{{ row.item_name}}</td> -->
+                <td>{{ row.credit }}</td>
+                <td>{{ row.debit }}</td>
+                <td class="text_bold">{{ row.balance }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3 class="text_center xg_color">Product Wise Commission</h3>
+    <table class="order-table display" id="productId" style="width:100%">
+        <thead>
+            <tr>
+                <!-- <th>Product Code</th> -->
+                <th>Product Name (Code)</th>
+                <th>Commission Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in product_wise_commission %}
+            <tr>
+                <!-- <td>{{ row.product_code }}</td> -->
+                <td><b>{{ row.product_name }}</b> ({{ row.product_code }})</td>
+                <td class="text_bold">{{ row.commission_amount }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>

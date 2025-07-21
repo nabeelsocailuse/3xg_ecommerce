@@ -1,0 +1,439 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-27 21:55:23.648494",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "email_append_to": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "merchant_id",
+  "column_break_vddij",
+  "merchant_business_name",
+  "column_break_co9fk",
+  "merchant_email",
+  "column_break_0r38j",
+  "created_at",
+  "item_info_section",
+  "item_code",
+  "sku",
+  "product_name",
+  "is_commissioned",
+  "image",
+  "images",
+  "column_break_v3dyw",
+  "is_disabled",
+  "is_live",
+  "status",
+  "quantity",
+  "images_gallery_section",
+  "images_display",
+  "section_break_w7ovw",
+  "description",
+  "specifications",
+  "pricing_details_section",
+  "actual_price",
+  "column_break_nu8lm",
+  "discounted_price",
+  "column_break_od6zp",
+  "discount",
+  "section_break_zznp4",
+  "commissionpercentage",
+  "column_break_si9gc",
+  "commission",
+  "features_tab",
+  "section_break_1ydol",
+  "category",
+  "sub_category",
+  "sub_sub_category",
+  "brand",
+  "model",
+  "column_break_mgesc",
+  "weight",
+  "collection",
+  "rating",
+  "color_details_section",
+  "color",
+  "section_break_ly9jm",
+  "seller_performance",
+  "column_break_95f5r",
+  "seller_name",
+  "section_break_ovdsz",
+  "warranty",
+  "warranty_period",
+  "key_features"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Data",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Table",
+   "label": "Color",
+   "options": "Product Color"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "collection",
+   "fieldtype": "Data",
+   "label": "Collection"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "seller_performance",
+   "fieldtype": "Link",
+   "label": "Seller Performance",
+   "options": "Seller Performance"
+  },
+  {
+   "fieldname": "warranty",
+   "fieldtype": "Text Editor",
+   "label": "Warranty"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "seller_name",
+   "fieldtype": "Data",
+   "label": "Seller Name"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "actual_price",
+   "fieldtype": "Currency",
+   "label": "Actual Price",
+   "search_index": 1
+  },
+  {
+   "fieldname": "discounted_price",
+   "fieldtype": "Currency",
+   "label": "Discounted Price",
+   "search_index": 1
+  },
+  {
+   "fieldname": "specifications",
+   "fieldtype": "Table",
+   "label": "Specifications",
+   "options": "Specifications"
+  },
+  {
+   "fieldname": "merchant_id",
+   "fieldtype": "Link",
+   "label": "Merchant ID",
+   "options": "Merchants"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_disabled",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Disabled",
+   "options": "0"
+  },
+  {
+   "fieldname": "key_features",
+   "fieldtype": "Text Editor",
+   "label": "Key Features"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_live",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Live",
+   "options": "0"
+  },
+  {
+   "fieldname": "item_info_section",
+   "fieldtype": "Section Break",
+   "label": "Item Info"
+  },
+  {
+   "fieldname": "column_break_v3dyw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pricing_details_section",
+   "fieldtype": "Tab Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "column_break_nu8lm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_od6zp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zznp4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "features_tab",
+   "fieldtype": "Tab Break",
+   "label": "Features"
+  },
+  {
+   "fieldname": "column_break_mgesc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "color_details_section",
+   "fieldtype": "Section Break",
+   "label": "Color Details"
+  },
+  {
+   "fieldname": "section_break_1ydol",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_ly9jm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_95f5r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ovdsz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_w7ovw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub_category",
+   "fieldtype": "Data",
+   "label": "Sub Category"
+  },
+  {
+   "fieldname": "warranty_period",
+   "fieldtype": "Data",
+   "label": "Warranty Period"
+  },
+  {
+   "fieldname": "sub_sub_category",
+   "fieldtype": "Data",
+   "label": "Sub Sub Category"
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SKU",
+   "read_only": 1
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Images",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nIN_REVIEW\nLIVE\nDISABLED"
+  },
+  {
+   "fieldname": "images_display",
+   "fieldtype": "HTML",
+   "label": "Images Display"
+  },
+  {
+   "fieldname": "images_gallery_section",
+   "fieldtype": "Section Break",
+   "label": "Images Gallery"
+  },
+  {
+   "fieldname": "column_break_vddij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Data",
+   "label": "Created At",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "merchant_id.email",
+   "fetch_if_empty": 1,
+   "fieldname": "merchant_email",
+   "fieldtype": "Data",
+   "label": "Merchant Email",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "merchant_id.business_name",
+   "fetch_if_empty": 1,
+   "fieldname": "merchant_business_name",
+   "fieldtype": "Data",
+   "label": "Merchant Business Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commissionpercentage",
+   "fieldtype": "Float",
+   "label": "CommissionPercentage"
+  },
+  {
+   "fieldname": "column_break_si9gc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Currency",
+   "label": "Commission"
+  },
+  {
+   "fieldname": "column_break_co9fk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0r38j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_commissioned",
+   "fieldtype": "Check",
+   "label": "Is Commissioned?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-15 14:22:44.766806",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Products",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "item_code, sku, product_name",
+ "sender_field": "merchant_email",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

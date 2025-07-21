@@ -1,0 +1,62 @@
+
+<div class="dashboard-cards">
+     
+    <div class="dashboard-card">
+        <a href="/app/payout-request" style="text-decoration: none;">
+            <h3>Total</h3>
+            <p>{{ total }}</p>
+        </a>
+    </div>
+
+    <div class="dashboard-card">
+        <a href="/app/payout-request?status=Approved" style="text-decoration: none;">
+            <h3>Approved</h3>
+            <p>{{ approved }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/payout-request?status=In%20Review" style="text-decoration: none;">
+            <h3>In Review</h3>
+            <p>{{ in_review }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/payout-request?status=Rejected" style="text-decoration: none;">
+            <h3>Rejected</h3>
+            <p>{{ rejected }}</p>
+        </a>
+    </div> 
+    
+</div>
+<div class="order-table-wrapper">
+    <h2>Payout Information</h2>
+    <table class="order-table display" id="example" style="width:100%">
+        <thead>
+            <tr>
+                <th>Payout ID</th>
+                <th>Merchant Email</th>
+                <th>Merchant Fullname</th>
+		<th>Amount</th>
+                <th>Status</th>
+                <th>Creation Date</th>
+                <th>Created By</th>
+                <th>Last Modified</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                
+                <td><a href="/app/products/{{product.name}}">{{ product.name }}</a></td>
+		<td>{{ product.merchant_email }}</td>
+		<td>{{ product.merchant_fullname }}</td>
+                <td>{{ product.amount }}</td>
+                <td>{{ product.status }}</td>
+                <td>{{ product.creation }}</td>
+                <td>{{ product.owner }}</td>
+                <td>{{ product.modified }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

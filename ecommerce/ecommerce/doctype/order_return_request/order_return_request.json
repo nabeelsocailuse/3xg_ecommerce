@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:id",
+ "creation": "2025-03-26 12:58:54.370357",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_info_section",
+  "id",
+  "orderid",
+  "orderitemid",
+  "quantity",
+  "column_break_3djon",
+  "receipt",
+  "status",
+  "media_info_section",
+  "media",
+  "address_info_section",
+  "lat",
+  "long",
+  "column_break_ipcvd",
+  "address",
+  "section_break_gosog",
+  "reason",
+  "column_break_9rxvn",
+  "comment",
+  "decision_info_section",
+  "decision"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_info_section",
+   "fieldtype": "Section Break",
+   "label": "Order Info"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "orderid",
+   "fieldtype": "Data",
+   "label": "Order Id"
+  },
+  {
+   "fieldname": "orderitemid",
+   "fieldtype": "Data",
+   "label": "Order Item Id"
+  },
+  {
+   "fieldname": "column_break_3djon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "receipt",
+   "fieldtype": "Data",
+   "label": "Receipt"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "media_info_section",
+   "fieldtype": "Section Break",
+   "label": "Media Info"
+  },
+  {
+   "fieldname": "column_break_9rxvn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gosog",
+   "fieldtype": "Section Break",
+   "label": "Reason & Comment"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "address_info_section",
+   "fieldtype": "Section Break",
+   "label": "Address Info"
+  },
+  {
+   "fieldname": "lat",
+   "fieldtype": "Data",
+   "label": "Lat"
+  },
+  {
+   "fieldname": "long",
+   "fieldtype": "Data",
+   "label": "Long"
+  },
+  {
+   "fieldname": "column_break_ipcvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "decision_info_section",
+   "fieldtype": "Section Break",
+   "label": "Decision Info"
+  },
+  {
+   "fieldname": "decision",
+   "fieldtype": "Select",
+   "label": "Decision",
+   "options": "\nReplace\nRefund"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nRejected\nApproved"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Table",
+   "label": "Order Return Request Media",
+   "options": "Order Return Request Media"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-23 10:19:05.471480",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Order Return Request",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

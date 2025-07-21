@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-09 12:15:38.660437",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "merchant_id",
+  "business_name",
+  "order_id",
+  "column_break_j6caf",
+  "status",
+  "release_date",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "merchant_id",
+   "fieldtype": "Link",
+   "label": "Merchant ID",
+   "options": "Merchants"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "label": "Order Id"
+  },
+  {
+   "fieldname": "column_break_j6caf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nHeld\nReleased\nRefunded\nConsoled\nDisputed"
+  },
+  {
+   "fieldname": "release_date",
+   "fieldtype": "Date",
+   "label": "Release Date"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fetch_from": "merchant_id.business_name",
+   "fieldname": "business_name",
+   "fieldtype": "Data",
+   "label": "Business Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-09 12:18:55.017051",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Escrow",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

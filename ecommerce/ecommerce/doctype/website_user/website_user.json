@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:email",
+ "creation": "2024-12-17 23:11:15.211240",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info_section",
+  "email",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "column_break_x6nke",
+  "username",
+  "user_id",
+  "more_info_section",
+  "gender",
+  "column_break_dfuua",
+  "phone",
+  "column_break_oaxjk",
+  "section_break_wvnmt",
+  "is_otp_verified",
+  "column_break_y55ru",
+  "is_email_verified",
+  "column_break_ipibu",
+  "is_phone_verified",
+  "section_break_nqvf1",
+  "password_hash",
+  "column_break_hn3iu",
+  "password_salt",
+  "login_info_section",
+  "last_login_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Email",
+   "options": "Email",
+   "unique": 1
+  },
+  {
+   "fieldname": "password_hash",
+   "fieldtype": "Data",
+   "label": "Password Hash",
+   "read_only": 1
+  },
+  {
+   "fieldname": "password_salt",
+   "fieldtype": "Data",
+   "label": "Password Salt",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_otp_verified",
+   "fieldtype": "Check",
+   "label": "Is OTP Verified"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_email_verified",
+   "fieldtype": "Check",
+   "label": "Is Email Verified"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_phone_verified",
+   "fieldtype": "Check",
+   "label": "Is Phone Verified"
+  },
+  {
+   "fieldname": "last_login_at",
+   "fieldtype": "Datetime",
+   "label": "Last Login At"
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "column_break_x6nke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "more_info_section",
+   "fieldtype": "Section Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "column_break_dfuua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oaxjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wvnmt",
+   "fieldtype": "Section Break",
+   "label": "Verificaiton Info"
+  },
+  {
+   "fieldname": "column_break_y55ru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ipibu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nqvf1",
+   "fieldtype": "Section Break",
+   "label": "Password Info"
+  },
+  {
+   "fieldname": "column_break_hn3iu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "login_info_section",
+   "fieldtype": "Section Break",
+   "label": "Login Info"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-18 13:39:19.689428",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Website User",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "first_name, last_name, email",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name"
+}

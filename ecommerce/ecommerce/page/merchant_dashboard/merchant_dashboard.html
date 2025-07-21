@@ -1,0 +1,61 @@
+<div class="dashboard-cards">
+    <div class="dashboard-card">
+        <a href="/app/merchants" style="text-decoration: none;">
+            <h3>Total</h3>
+            <p>{{ total }}</p>
+        </a>
+    </div>
+
+    <div class="dashboard-card">
+        <a href="/app/merchants?status=Applied" style="text-decoration: none;">
+            <h3>Applied</h3>
+            <p>{{ applied }}</p>
+        </a>
+    </div>
+
+    <div class="dashboard-card">
+        <a href="/app/merchants?status=Activated" style="text-decoration: none;">
+            <h3>Activated</h3>
+            <p>{{ activated }}</p>
+        </a>
+    </div>
+
+    <div class="dashboard-card">
+        <a href="/app/merchants?status=Deactivated" style="text-decoration: none;">
+            <h3>Deactivated</h3>
+            <p>{{ deactivated }}</p>
+        </a>
+    </div> 
+</div>
+
+<div class="order-table-wrapper">
+    <h2>Merchants Information</h2>
+    <table class="order-table display" id="example" style="width:100%">
+        <thead>
+            <tr>
+                <th>Merchant Email</th>
+                <th>Merchant Name</th>
+                <th>Merchant Business</th>
+                <th>Status</th>
+		<th>Balance</th>
+                <th>Creation Date</th>
+                <th>Created By</th>
+                <th>Last Modified</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.email }}</td>
+                <td>{{ product.full_name }}</td>
+                <td>{{ product.business_name }}</td>
+                <td>{{ product.status }}</td>
+		<td>{{ product.wallet_balance}}</td>
+                <td>{{ product.creation }}</td>
+                <td>{{ product.owner }}</td>
+                <td>{{ product.modified }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

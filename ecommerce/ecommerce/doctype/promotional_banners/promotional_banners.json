@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Banner-{####}",
+ "creation": "2025-03-20 13:22:21.758903",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "platform",
+  "column_break_cumis",
+  "banner_type",
+  "column_break_rutkg",
+  "status",
+  "banner_dimensions_section",
+  "placement",
+  "column_break_ymce9",
+  "height",
+  "column_break_0mtg1",
+  "width",
+  "column_break_x611i",
+  "promotional_banners_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_x611i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "banner_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Banner Type",
+   "options": "\nShop\nDeals\nBulk\nLuxury\nHealth Supplies"
+  },
+  {
+   "fieldname": "banner_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Banner Dimensions"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "column_break_0mtg1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "default": "Activated",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActivated\nDeactivated"
+  },
+  {
+   "fieldname": "placement",
+   "fieldtype": "Data",
+   "label": "Placement"
+  },
+  {
+   "fieldname": "promotional_banners_table",
+   "fieldtype": "Table",
+   "label": "Promotional Banners Table",
+   "options": "Promotional Banners Table"
+  },
+  {
+   "fieldname": "column_break_cumis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Web",
+   "fieldname": "platform",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Platform",
+   "options": "\nWeb\nMobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rutkg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ymce9",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-05 09:37:34.289409",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Promotional Banners",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Guest"
+  }
+ ],
+ "search_fields": "banner_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

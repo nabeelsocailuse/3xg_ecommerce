@@ -1,0 +1,229 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-25 10:02:11.686201",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_2b3me",
+  "user_type",
+  "column_break_82sf0",
+  "email",
+  "section_break_tqxhs",
+  "type",
+  "column_break_tybhb",
+  "status",
+  "section_break_5uohf",
+  "fromwalletid",
+  "column_break_hns2f",
+  "towalletid",
+  "section_break_cl8zo",
+  "amount",
+  "column_break_4dnra",
+  "fee",
+  "section_break_yfjr9",
+  "reference",
+  "externalreference",
+  "column_break_mh6um",
+  "orderid",
+  "paymentprovider",
+  "releasedate",
+  "section_break_7guuh",
+  "description",
+  "accounting_details_section",
+  "company",
+  "column_break_3udq8",
+  "wallet_account",
+  "wallet_funding_fee_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "column_break_tybhb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "section_break_5uohf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fromwalletid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Wallet Id"
+  },
+  {
+   "fieldname": "column_break_hns2f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "towalletid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Wallet Id"
+  },
+  {
+   "fieldname": "section_break_cl8zo",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_4dnra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fee",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Fee"
+  },
+  {
+   "fieldname": "section_break_yfjr9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "reference"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "externalreference",
+   "fieldtype": "Data",
+   "label": "externalReference"
+  },
+  {
+   "fieldname": "paymentprovider",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "paymentProvider"
+  },
+  {
+   "fieldname": "orderid",
+   "fieldtype": "Data",
+   "label": "orderId"
+  },
+  {
+   "fieldname": "releasedate",
+   "fieldtype": "Data",
+   "label": "releaseDate"
+  },
+  {
+   "fieldname": "section_break_7guuh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mh6um",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2b3me",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "customer",
+   "fieldname": "user_type",
+   "fieldtype": "Select",
+   "label": "User Type",
+   "options": "\ncustomer\nmerchant"
+  },
+  {
+   "fieldname": "column_break_82sf0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tqxhs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "Website User"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "accounting_details_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Details"
+  },
+  {
+   "default": "3XG Ecommerce",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_3udq8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "company.wallet_account",
+   "fetch_if_empty": 1,
+   "fieldname": "wallet_account",
+   "fieldtype": "Link",
+   "label": "Wallet Account",
+   "options": "Account",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company.wallet_funding_fee_account",
+   "fetch_if_empty": 1,
+   "fieldname": "wallet_funding_fee_account",
+   "fieldtype": "Link",
+   "label": "Wallet Funding Fee Account",
+   "options": "Account",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-11 08:01:11.495826",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Wallet Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "paymentprovider"
+}

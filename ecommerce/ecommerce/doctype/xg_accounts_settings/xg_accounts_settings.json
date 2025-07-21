@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-22 13:05:00.788512",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "warehouses_info_section",
+  "physical_warehouse",
+  "column_break_uazkz",
+  "virtual_warehouse",
+  "accounts_info_section",
+  "merchant_account",
+  "column_break_jqyrv",
+  "wallet_account",
+  "column_break_udbpc",
+  "shipping_account",
+  "column_break_hsarc",
+  "commission_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "warehouses_info_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouses Info"
+  },
+  {
+   "fieldname": "physical_warehouse",
+   "fieldtype": "Link",
+   "label": "Physical Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_uazkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "virtual_warehouse",
+   "fieldtype": "Link",
+   "label": "Virtual Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "accounts_info_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts Info"
+  },
+  {
+   "fieldname": "wallet_account",
+   "fieldtype": "Link",
+   "label": "Wallet Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_udbpc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_account",
+   "fieldtype": "Link",
+   "label": "Shipping Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "merchant_account",
+   "fieldtype": "Link",
+   "label": "Merchant Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_jqyrv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hsarc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_account",
+   "fieldtype": "Link",
+   "label": "Commission Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-07-07 12:56:12.188218",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "XG Accounts Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

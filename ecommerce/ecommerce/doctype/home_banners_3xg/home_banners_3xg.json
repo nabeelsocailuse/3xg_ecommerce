@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:HB-3XG-{####}",
+ "creation": "2025-06-05 09:34:46.452434",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "platform",
+  "column_break_rutkg",
+  "banner_type",
+  "column_break_rn7cf",
+  "status",
+  "row1_banners_section",
+  "home_row1_sliders",
+  "row1_column_banners",
+  "home_row1_column3_top",
+  "home_row1_column3_top_url",
+  "column_break_9yavg",
+  "home_row1_column3_bottom",
+  "home_row1_column3_bottom_url",
+  "section_break_5ezbr",
+  "home_row2_column1_left",
+  "home_row2_column1_left_url",
+  "column_break_xdc5y",
+  "home_row2_column1_right",
+  "home_row2_column1_right_url",
+  "section_break_qzuza",
+  "home_row3_sliders",
+  "section_break_0x7i5",
+  "home_row4",
+  "home_row4_url"
+ ],
+ "fields": [
+  {
+   "default": "Web",
+   "fieldname": "platform",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Platform",
+   "options": "\nWeb\nMobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "banner_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Banner Type",
+   "options": "\nShop\nDeals\nBulk\nLuxury\nHealth Supplies"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_rutkg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Activated",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActivated\nDeactivated"
+  },
+  {
+   "columns": 2,
+   "fieldname": "home_row1_column3_top",
+   "fieldtype": "Attach",
+   "label": "Home Row1 Column3 Top",
+   "options": "[\".png\", \".jpg\", \".jpeg\"]"
+  },
+  {
+   "columns": 2,
+   "fieldname": "home_row1_column3_bottom",
+   "fieldtype": "Attach",
+   "label": "Home Row1 Column3 Bottom"
+  },
+  {
+   "fieldname": "section_break_5ezbr",
+   "fieldtype": "Section Break",
+   "label": "Row2 Banners "
+  },
+  {
+   "fieldname": "home_row2_column1_left",
+   "fieldtype": "Attach",
+   "label": "Home Row2 Column1 Left"
+  },
+  {
+   "fieldname": "home_row2_column1_right",
+   "fieldtype": "Attach",
+   "label": "Home Row2 Column1 Right"
+  },
+  {
+   "fieldname": "section_break_qzuza",
+   "fieldtype": "Section Break",
+   "label": "Row3 Banners"
+  },
+  {
+   "fieldname": "home_row3_sliders",
+   "fieldtype": "Table",
+   "label": "Home Row3 Sliders",
+   "options": "Home Row3 Sliders"
+  },
+  {
+   "fieldname": "section_break_0x7i5",
+   "fieldtype": "Section Break",
+   "label": "Row4 Banners"
+  },
+  {
+   "fieldname": "column_break_xdc5y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rn7cf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "row1_banners_section",
+   "fieldtype": "Section Break",
+   "label": "Row1 Banners"
+  },
+  {
+   "fieldname": "row1_column_banners",
+   "fieldtype": "Section Break",
+   "label": "Row1 Column Banners"
+  },
+  {
+   "fieldname": "column_break_9yavg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "columns": 7,
+   "fieldname": "home_row1_sliders",
+   "fieldtype": "Table",
+   "label": "Home Row1 Sliders",
+   "options": "Home Row1 Sliders"
+  },
+  {
+   "fieldname": "home_row4",
+   "fieldtype": "Attach",
+   "label": "Home Row4"
+  },
+  {
+   "fieldname": "home_row1_column3_top_url",
+   "fieldtype": "Data",
+   "label": "Redirect URL"
+  },
+  {
+   "fieldname": "home_row1_column3_bottom_url",
+   "fieldtype": "Data",
+   "label": "Redirect URL"
+  },
+  {
+   "fieldname": "home_row2_column1_left_url",
+   "fieldtype": "Data",
+   "label": "Redirect URL"
+  },
+  {
+   "fieldname": "home_row2_column1_right_url",
+   "fieldtype": "Data",
+   "label": "Redirect URL"
+  },
+  {
+   "fieldname": "home_row4_url",
+   "fieldtype": "Data",
+   "label": "Redirect URL"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-11 12:42:56.897303",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Home Banners 3XG",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Guest"
+  }
+ ],
+ "search_fields": "banner_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

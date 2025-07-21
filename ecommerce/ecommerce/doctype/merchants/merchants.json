@@ -1,0 +1,307 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:merchant_id",
+ "creation": "2024-12-10 07:41:08.069800",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "merchant_id",
+  "general_info_section",
+  "first_name",
+  "last_name",
+  "full_name",
+  "column_break_qhgng",
+  "username",
+  "password",
+  "is_commissioned",
+  "business_info_section",
+  "business_name",
+  "business_type",
+  "business_category",
+  "business_categories",
+  "column_break_hybc8",
+  "business_location_lat",
+  "email",
+  "business_location_long",
+  "other_info_section",
+  "phone",
+  "zipcode",
+  "column_break_xzkye",
+  "street",
+  "city",
+  "state",
+  "country",
+  "settings_tab",
+  "status",
+  "shop_official_store",
+  "column_break_mmrzn",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "zipcode",
+   "fieldtype": "Data",
+   "label": "Zip Code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "business_name",
+   "fieldtype": "Data",
+   "label": "Business Name"
+  },
+  {
+   "description": "It's from node server.",
+   "fieldname": "merchant_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Merchant ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "business_location_lat",
+   "fieldtype": "Float",
+   "label": "Business Location Latitude"
+  },
+  {
+   "fieldname": "business_location_long",
+   "fieldtype": "Float",
+   "label": "Business Location Longitude"
+  },
+  {
+   "fieldname": "general_info_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qhgng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_info_section",
+   "fieldtype": "Tab Break",
+   "label": "Business Info"
+  },
+  {
+   "fieldname": "column_break_hybc8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_info_section",
+   "fieldtype": "Tab Break",
+   "label": "Address Info"
+  },
+  {
+   "fieldname": "column_break_xzkye",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Data",
+   "label": "Business Type"
+  },
+  {
+   "fieldname": "business_category",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Business Category"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "business_categories",
+   "fieldtype": "Table MultiSelect",
+   "label": "Business Category",
+   "options": "Business Categories"
+  },
+  {
+   "fieldname": "settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Settings"
+  },
+  {
+   "default": "Applied",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Applied\nActivated\nDeactivated"
+  },
+  {
+   "fieldname": "column_break_mmrzn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.status!='Applied'",
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Reason",
+   "mandatory_depends_on": "eval: doc.status!='Applied'"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.status=='Activated'",
+   "fieldname": "shop_official_store",
+   "fieldtype": "Check",
+   "label": "Shop Official Store",
+   "mandatory_depends_on": "eval: doc.status!='Applied'"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_commissioned",
+   "fieldtype": "Check",
+   "label": "Is Commissioned?"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "BankAccount",
+   "link_fieldname": "merchantid"
+  },
+  {
+   "link_doctype": "Products",
+   "link_fieldname": "merchant_id"
+  },
+  {
+   "link_doctype": "Order",
+   "link_fieldname": "seller_id"
+  },
+  {
+   "link_doctype": "Payout Request",
+   "link_fieldname": "merchant_id"
+  }
+ ],
+ "modified": "2025-07-21 10:10:33.802544",
+ "modified_by": "Administrator",
+ "module": "Ecommerce",
+ "name": "Merchants",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Super User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "email"
+}

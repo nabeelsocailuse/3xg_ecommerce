@@ -1,0 +1,59 @@
+<!-- <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+</head> -->
+
+<div class="dashboard-cards">
+    <div class="dashboard-card">
+        <a href="/app/order?status=Ongoing" style="text-decoration: none;">
+            <h3>Ongoing</h3>
+            <p>{{ ongoing }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/order?status=Pending" style="text-decoration: none;">
+            <h3>Pending</h3>
+            <p>{{ pending }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/order?status=Completed" style="text-decoration: none;">
+            <h3>Completed</h3>
+            <p>{{ completed }}</p>
+        </a>
+    </div>
+    <div class="dashboard-card">
+        <a href="/app/order?status=Rejected" style="text-decoration: none;">
+            <h3>Rejected</h3>
+            <p>{{ rejected }}</p>
+        </a>
+    </div>
+</div>
+<div class="order-table-wrapper">
+    <h2>Orders Information</h2>
+    <table class="order-table display" id="example" style="width:100%">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Order ID</th>
+                <th>Status</th>
+                <th>Order Price</th>
+                <th>Creation Date</th>
+                <th>Shipping Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>{{ order.email }}</td>
+                <td><a href="/app/order/{{order.name}}">{{ order.name }}</a></td>
+                <td>{{ order.status }}</td>
+                <td>{{ order.order_price }}</td>
+                <td>{{ order.creation_date }}</td>
+                <td>{{ order.shipping_address }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
